@@ -1,10 +1,23 @@
 import React from 'react'
 import Titulo from '../../components/Titulo'
+import Avatar from '../../components/Avatar'
+import Paragrafo from '../../components/Paragrafo'
+
+import { Descricao, BotaoTema, SidebarContainer } from './styles'
 
 const Sidebar = () => (
   <aside>
-    <img src="https://github.com/t-moreira1982.png" />
-    <Titulo fontSize={20}>Thiago Moreira</Titulo>
+    <SidebarContainer>
+      <Avatar />
+      <Titulo fontSize={20}>Thiago Moreira</Titulo>
+      <Paragrafo tipo="secundario" fontSize={16}>
+        t-moreira1982
+      </Paragrafo>
+      <Descricao tipo="principal" fontSize={12}>
+        Engenheiro Front-End
+      </Descricao>
+      <BotaoTema>Trocar tema</BotaoTema>
+    </SidebarContainer>
   </aside>
 )
 
